@@ -1,0 +1,20 @@
+#girl .debug{
+	bottom: 50%;
+position: absolute;
+font-weight: bold;
+font-family: arial;
+background:#fff;
+}
+
+
+
+#speechDebug{
+	width : 310px;
+	top: 10px;
+
+	left: 800px;
+
+	/*border: 3px solid #0ff;*/
+}
+
+#speechDebug p{ font-weight:bold; color: red; background: :#fff;}

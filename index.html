@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title> Speedate </title>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+		<link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.1/build/cssreset/cssreset-min.css">
+
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/cards.css" rel="stylesheet" />
+		<link href="css/summary.css" rel="stylesheet" />
+		<link href="css/debug.css" rel="stylesheet" />
+
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/jquery.event.drag-2.2.js"></script>
+		<script src="js/lib/jquery.event.drag.live-2.2.js"></script>
+		<script src="js/lib/jquery.event.drop-2.2.js"></script>
+		<script src="js/lib/jquery.event.drop.live-2.2.js"></script>
+		<script src="js/lib/underscore-min.js"></script>
+		<script src="js/lib/buzz.js"></script>
+		<script data-main="js/dating.js" src="js/lib/require.js"></script>
+
+		
+	</head>
+	<body>
+		<div id="next" style="display:none">
+				<p class="next">NEXT!</p>
+		</div>
+		<div id="startScreen">
+				<h1>Speedate!</h1>
+			<div class="container">
+
+				<div class="content">
+					<p>Douchey McDouchebag needs some lovin'</p>
+					<p>Nothing like a bit of speed dating to get your <span class='loves'>heart pumping!</span></p>
+
+					<p>Try and make your dates heart race by figuring out what she loves and hates. </p>
+
+					<p>The girls gradually reveal their interests. Discard the bad cards and keep the good ones to make a perfect hand and win them over!</p>
+
+					<div class="content">
+						
+					</div>
+				</div>
+				<!--<div style="width:1000px; margin: 0 auto;position:relative"> -->
+					<a href="#" id="easy" class="btn"><h2>Easy</h2><span id="easydesc">These girls like a lot of stuff and are not too picky about their men. You play using only the relevant cards. You have 60 seconds.</span></a>
+					<a href="#" id="medium" class="btn" ><h2>Medium</h2><span id="mediumdesc">These girls are tougher. You play using the full deck. You have 45 seconds.</span></a>
+					<a href="#" id="hard" class="btn"><h2>Hard</h2><span id="harddesc">These girls are tough cookies and you have only 30 seconds!</span></a>
+				<!--</div>-->
+				
+
+				
+
+				
+			</div>
+		</div>
+		<div id="game" style="display:none;">
+			<div id="stage">
+				<div id="girl" class="animated"></div>
+				<div id="speech"></div>
+				<div id="boy"></div>
+
+				<div id="table"></div>
+
+				
+
+				<div id="speechDebug"></div>
+
+				<div id="timer"></div>
+
+				<!-- <div id="discard-pile">discard</div> -->
+				
+			</div>
+			<div style="width:1000px;display:block; margin:0 auto;position:relative">
+				<ul id="card-holder"></ul>
+				<a id="dealCards" class="btn" href="#">Deal Cards</a>
+				<a id="playYourHand" class="btn" href="#" style="display:none">Play your hand</a>
+			</div>
+		</div>
+
+		<div id="summaryScreen" style="display:none">
+			<div class="container">
+				<div id="guy"></div>
+				<div class="content">
+					<p>How many hearts did Douchey McDouchebag set racing?</p>
+
+					<div id="numbers"></div>
+					<div id="soulmates"></div>
+
+					<a href="#" id="restart">Try Again</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>	
